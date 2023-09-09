@@ -1,0 +1,35 @@
+//Take as input S, a string. Write a function that replaces every even character with the character having just higher ASCII code and every odd character with the character having just lower ASCII code. Print the value returned.
+//Input Format
+// String
+
+// Constraints
+// Length of string should be between 1 to 1000.
+
+// Output Format
+// String
+
+// Sample Input
+// abcg
+// Sample Output
+// badf
+// if even =>replace with having just higher ascii value like (a to b)
+// if odd => reaplace with having just lower ascii value like(b to a)
+
+#include<bits/stdc++.h>
+
+using namespace std;
+
+int main()
+{
+     string str;
+     cin>>str;
+
+     for(int i=0;i<str.length();i++)
+     {
+          if(i%2==0)
+               str[i]++;
+          else
+               str[i]--;
+          cout<<str[i];
+     }
+}

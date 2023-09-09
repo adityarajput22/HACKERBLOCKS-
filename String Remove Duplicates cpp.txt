@@ -1,0 +1,37 @@
+// Take as input S, a string. Write a function that removes all consecutive duplicates. Print the value returned.
+
+// Input Format
+// String
+
+// Constraints
+// A string of length between 1 to 1000
+
+// Output Format
+// String
+
+// Sample Input
+// aabccba
+// Sample Output
+// abcba
+// Explanation
+// For the given example, "aabccba", Consecutive Occurrence of a is 2, b is 1, and c is 2.
+
+// After removing all of the consecutive occurences, the Final ans will be : - "abcba".
+#include<bits/stdc++.h>
+
+using namespace std;
+
+int main()
+{
+     string str;
+     cin>>str;
+
+     int i;
+     for(i=0;i<str.length();i++)
+     {
+          if(i==0) //pehla a print hoga yha se 
+               cout<<str[i];
+          else if(str[i]!=str[i-1])  (// if piche wale se equal nhi hua toh hme usse print kr dena hai )
+                    cout<<str[i];    (// agr nhi hua to hmari if wali condition true hogi hii kyoki isme ek toh true hota hi hai agr dono ki condition false bhi h tbhi )
+     }
+}
